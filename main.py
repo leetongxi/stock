@@ -1,7 +1,7 @@
 from network.tusharedata import Network
 import pandas as pd
+from network.basicdata import rpsdx
 
 if __name__ == "__main__":
-    net = Network()
-    data = net.trade_cal()
-    print(data)
+    rps = rpsdx()
+    print(rps.cal_rps())
